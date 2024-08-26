@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="appointments">
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+            
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <!-- Options for doctors -->
+            </select>
+            
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Select Time Slot:</label>
+            <input type="time" id="time" name="time" required>
+                <!-- Options for time slots -->
+            
+            
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <section class="cancellation">
+        <h2>Cancel an Appointment</h2>
+        <form id="cancellation-form">
+            <label for="appointment-id">Appointment ID:</label>
+            <input type="text" id="appointment-id" name="appointment-id" required>
+            
+            <button type="submit">Cancel Appointment</button>
+        </form>
+    </section>
+    <section class="view-appointments">
+        <h2>View Appointments</h2>
+        <button id="view-appointments-btn">View My Appointments</button>
+        <div id="appointments-list">
+            <!-- List of appointments will be dynamically populated here -->
+        </div>
+    </section>
+    <section class="doctor-info">
+        <h2>Doctor Information and Time Slots</h2>
+        
+            <!-- Example of a doctor card -->
+            <div class="doctor-card" data-doctor-id="1">
+                <h3>Dr. John Doe</h3>
+                <div class="time-slots">
+                    
+                    <div class="slot booked" data-time="09:00">09:00</div>
+                    <div class="slot available" data-time="09:30">09:30</div>
+                    <div class="slot available" data-time="10:00">10:00</div>
+                    <div class="slot available" data-time="10:30">10:30</div>
+                    <div class="slot available" data-time="11:00">11:00</div>
+                    <div class="slot available" data-time="11:30">11:30</div>
+                    <div class="slot available" data-time="12:00">12:00</div>
+                    <div class="slot available" data-time="12:30">12:30</div>
+                    <div class="slot available" data-time="14:00">14:00</div>
+                    <div class="slot available" data-time="14:30">14:30</div>
+                    <div class="slot available" data-time="15:00">15:00</div>
+                    <div class="slot booked" data-time="15:30">15:30</div>
+                    <div class="slot available" data-time="16:00">16:00</div>
+                    <div class="slot available" data-time="16:30">16:30</div>
+                    <div class="slot available" data-time="17:00">17:00</div>
+                    <div class="slot available" data-time="17:30">17:30</div>
+                    <div class="slot available" data-time="18:00">18:00</div>
+                    <div class="slot available" data-time="18:30">18:30</div>
+                    <div class="slot available" data-time="19:00">19:00</div>
+                    <div class="slot available" data-time="19:30">19:30</div>
+                    <div class="slot available" data-time="20:00">20:00</div>
+                    <div class="slot available" data-time="20:30">20:30</div>
+                    <div class="slot available" data-time="21:00">21:00</div>
+                    <div class="slot available" data-time="21:30">21:30</div>
+                    <!-- Other slots -->
+                </div>
+            </div>
+            
+                
+            
+                
+               
+            <!-- Repeat the above card for each doctor -->
+            
+                    <!-- Add more slots as needed -->
+                
+        </div>
+    </section>
+    
+<script src="app.js"></script>
+</body>
+</html>
+        
